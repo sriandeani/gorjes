@@ -1,0 +1,132 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      Shawl Store
+    </ion-title>
+   
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-slides pager="true" #mySlider (ionSlidesDidLoad)="slidesDidLoad(mySlider)">
+    <ion-slide>
+      <img src="assets/icon/Logo2.png">
+    </ion-slide>
+    <ion-slide>
+      <img src="assets/icon/foto-1.png">
+    </ion-slide>
+    <ion-slide>
+      <img src="assets/icon/5.jpg">
+    </ion-slide>
+    <ion-slide>
+      <img src="assets/icon/foto-3.png">
+    </ion-slide>
+  </ion-slides>
+  <div>
+    <ion-toolbar style="height: auto;" color="primary">
+      <h3 text-center>Our Collections</h3>
+    </ion-toolbar>
+  </div>
+  <p></p>
+  <ion-card>
+    <ion-card-header>
+      <img src="assets/icon/cc2.png">
+      <ion-card-subtitle><ion-text color="tertiary">Rachel Shawl</ion-text></ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      Shawl dengan bahan yang lembut namun tegak paripurna dan harga yang terjangkau.
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <img src="assets/icon/cc3.jpg">
+      <ion-card-subtitle><ion-text color="tertiary">Alicia Shawl</ion-text></ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      Shawl dengan warna pastel dan bahan yang lembut namun tegak paripurna dan harga yang terjangkau.
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <img src="assets/icon/cc1.jpg">
+      <ion-card-subtitle><ion-text color="tertiary">Tyrex Shawl</ion-text></ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      Shawl pashmina dengan bahan tidak nerawang yang lembut namun tegak paripurna dan harga yang terjangkau.
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <img src="assets/icon/collection (1).jpeg">
+      <ion-card-subtitle><ion-text color="tertiary">Alexa Shawl</ion-text></ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      Shawl dengan pattern unik dan tentunya bahan yang lembut namun tegak paripurna dan harga yang terjangkau.
+    </ion-card-content>
+  </ion-card>
+
+
+  <!--
+  <ion-segment (ionChange)="segmentChanged($event)">
+      <div>
+    <ion-segment-button value="Alexa">
+      <ion-label >Alexa</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="Allura">
+      <ion-label>Allura</ion-label>
+    </ion-segment-button>
+   
+</div>
+
+<div>
+<ion-segment-button value="Azzura">
+    <ion-label>Azzura</ion-label>
+  </ion-segment-button>
+  <ion-segment-button value="Alyndra">
+      <ion-label>Alyndra</ion-label>
+    </ion-segment-button> 
+  </div>
+<div>
+    
+    <ion-segment-button value="Alycia">
+      <ion-label>Alycia</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="Tyrex">
+      <ion-label>Tyrex</ion-label>
+    </ion-segment-button>
+  </div>
+  </ion-segment> -->
+
+  <!-- <ion-fab vertical="bottom" horizontal="end" slot="fixed" (click)="goTambahPinjaman()">
+    <ion-fab-button>
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+  <ion-card *ngFor="let item of listDataPinjaman" color="primary">
+    <ion-item color="secondary">
+      <span item-left> Nama Pembeli : {{item.user }}</span>
+    </ion-item>
+    <ion-item color="secondary">
+      <span item-left> Tipe Shawl : {{item.tipe }}</span>
+    </ion-item>
+    <ion-item color="secondary">
+      <span item-left> Total Harga  : {{item.harga }}</span>
+    </ion-item>
+    <ion-item color="secondary">
+      <span item-left> Tanggal Pembelian  : {{item.tanggalPembelian }}</span>
+    </ion-item>
+    <ion-item color="secondary">
+      <span item-left></span>
+      <ion-button slot="end" color="danger" (click)="hapusDataPinjaman(item)">
+        <ion-icon name="trash"></ion-icon>
+        </ion-button>
+    </ion-item>
+  </ion-card>-->
+</ion-content>

@@ -1,0 +1,144 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      KATALOG
+    </ion-title>
+    <ion-button fill="clear" color="danger" slot="end" (click)="goCart()">
+        <ion-icon name="cart"></ion-icon>
+      </ion-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle>gorjes</ion-card-subtitle>
+      <ion-card-title>Alexa Shawl</ion-card-title>
+      <img src="assets/icon/katalog1.jpg">
+    </ion-card-header>
+    <ion-card-content>
+      <ion-text color="primary">
+        <h2>IDR 70000</h2>
+      </ion-text>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle>gorjes</ion-card-subtitle>
+      <ion-card-title>Allura Shawl</ion-card-title>
+      <img src="assets/icon/katalog2.jpg">
+    </ion-card-header>
+    <ion-card-content>
+      <ion-text color="primary">
+        <h2>IDR 70000</h2>
+      </ion-text>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle>gorjes</ion-card-subtitle>
+      <ion-card-title>Azzura Shawl</ion-card-title>
+      <img src="assets/icon/katalog3.jpg">
+    </ion-card-header>
+    <ion-card-content>
+      <ion-text color="primary">
+        <h2>IDR 65000</h2>
+      </ion-text>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle>gorjes</ion-card-subtitle>
+      <ion-card-title>Alynda Shawl</ion-card-title>
+      <img src="assets/icon/katalog4.jpg">
+    </ion-card-header>
+    <ion-card-content>
+      <ion-text color="primary">
+        <h2>IDR 75000</h2>
+      </ion-text>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle>gorjes</ion-card-subtitle>
+      <ion-card-title>Alicia Shawl</ion-card-title>
+      <img src="assets/icon/katalog5.jpg">
+    </ion-card-header>
+    <ion-card-content>
+      <ion-text color="primary">
+        <h2>IDR 65000</h2>
+      </ion-text>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle>gorjes</ion-card-subtitle>
+      <ion-card-title>Tyrex Shawl</ion-card-title>
+      <img src="assets/icon/tyrex.jpg">
+    </ion-card-header>
+    <ion-card-content>
+      <ion-text color="primary">
+        <h2>IDR 65000</h2>
+      </ion-text>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle>gorjes</ion-card-subtitle>
+      <ion-card-title>Rachel Shawl</ion-card-title>
+      <img src="assets/icon/rachel.jpeg">
+    </ion-card-header>
+    <ion-card-content>
+      <ion-text color="primary">
+        <h2>IDR 75000</h2>
+      </ion-text>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle>gorjes special edition</ion-card-subtitle>
+      <ion-card-title>Tyrex Shawl Pashmina</ion-card-title>
+      <img src="assets/icon/pashmina.jpg">
+    </ion-card-header>
+    <ion-card-content>
+      <ion-text color="primary">
+        <h2>IDR 65000</h2>
+      </ion-text>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle>gorjes</ion-card-subtitle>
+      <ion-card-title>Alexa Scarf</ion-card-title>
+      <img src="assets/icon/scarf1.jpg">
+    </ion-card-header>
+    <ion-card-content>
+      <ion-text color="primary">
+        <h2>IDR 65000</h2>
+      </ion-text>
+    </ion-card-content>
+  </ion-card>
+
+
+  <ion-list>
+    <ion-item *ngFor="let item of items">
+      <ion-icon [name]="item.icon" slot="start"></ion-icon>
+      {{item.title}}
+      <div class="item-note" slot="end">
+        {{item.note}}
+      </div>
+    </ion-item>
+  </ion-list>
+  
+</ion-content>

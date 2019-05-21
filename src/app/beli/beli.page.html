@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Beli</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle>gorjes</ion-card-subtitle>
+      <ion-card-title>{{ view.productName }}</ion-card-title>
+      <img src="assets/icon/{{ view.image }}">
+    </ion-card-header>
+    <ion-card-content>
+      <ion-text color="primary">
+        <h2>IDR {{ view.harga }}</h2>
+      </ion-text>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-item>
+    <ion-label position="stacked">Nama</ion-label>
+    <ion-input clearInput type="text" [(ngModel)]="nama"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="stacked">Alamat</ion-label>
+    <ion-input clearInput type="text" [(ngModel)]="alamat"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="stacked">Kuantitas</ion-label>
+    <ion-input clearInput type="text" [(ngModel)]="kuantitas"></ion-input>
+  </ion-item>
+  <br>
+  <br>
+  <br>
+  <div style="display: flex; justify-content: center">
+    <ion-button (click)="beli()" stlyle="width: 150px;" color="primary">Beli</ion-button>
+  </div>
+</ion-content>

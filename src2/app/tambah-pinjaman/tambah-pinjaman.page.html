@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      Data Pembelian
+    </ion-title>
+    <ion-buttons slot="end" (click)="simpanData()">
+      <ion-icon name="md-checkmark"></ion-icon>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item>
+      <ion-label position="stacked">Tipe Shawl</ion-label>
+      <ion-select [(ngModel)]="tipe">
+        <ion-select-option value=" Allura">Allura</ion-select-option>
+        <ion-select-option value=" Alexa">Alexa</ion-select-option>
+        <ion-select-option value=" Alicia">Alicia</ion-select-option>
+        <ion-select-option value=" Alynda">Alynda</ion-select-option>
+        <ion-select-option value=" Azzura">Azzura</ion-select-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked">Nama Pembeli</ion-label>
+      <ion-input clearInput type="text" [(ngModel)]="user"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked">Harga</ion-label>
+      <ion-input clearInput type="text" [(ngModel)]="harga"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked">Tanggal Pembelian</ion-label>
+      <ion-input type="date" [(ngModel)]="tanggalPembelian"></ion-input>
+    </ion-item>
+  </ion-list>
+</ion-content>

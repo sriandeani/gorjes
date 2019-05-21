@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      KATALOG
+    </ion-title>
+    <ion-button fill="clear" color="danger" slot="end" (click)="goCart()">
+      <ion-icon name="cart"></ion-icon>
+    </ion-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card *ngFor="let data of katalog">
+    <ion-card-header>
+      <ion-card-subtitle>gorjes</ion-card-subtitle>
+      <ion-card-title>{{ data.productName }}</ion-card-title>
+      <img src="assets/icon/{{ data.image }}">
+    </ion-card-header>
+    <ion-card-content>
+      <ion-text color="primary">
+        <h2>IDR {{ data.harga }}</h2>
+      </ion-text>
+      <ion-button color="primary" (click)="addtoCart(data)">Add to cart</ion-button>
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>

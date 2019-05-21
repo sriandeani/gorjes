@@ -1,0 +1,41 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Cart</ion-title>
+    <ion-button fill="clear" color="danger" slot="start" 
+    (click)="goHome()">
+      <ion-icon name="arrow-round-back"></ion-icon>
+    </ion-button> 
+    <ion-button fill="clear" color="danger" slot="end"
+    (click)="hapusSemuaDataPinjaman()">
+     <ion-icon name="trash"></ion-icon>
+     </ion-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed" (click)="goTambahPinjaman()">
+    <ion-fab-button>
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+  <ion-card *ngFor="let item of listDataPinjaman" color="primary">
+    <ion-item color="secondary">
+      <span item-left> Nama Pembeli : {{item.user }}</span>
+    </ion-item>
+    <ion-item color="secondary">
+      <span item-left> Tipe Shawl : {{item.tipe }}</span>
+    </ion-item>
+    <ion-item color="secondary">
+      <span item-left> Total Harga  : {{item.harga }}</span>
+    </ion-item>
+    <ion-item color="secondary">
+      <span item-left> Tanggal Pembelian  : {{item.tanggalPembelian }}</span>
+    </ion-item>
+    <ion-item color="secondary">
+      <span item-left></span>
+      <ion-button slot="end" color="danger" (click)="hapusDataPinjaman(item)">
+        <ion-icon name="trash"></ion-icon>
+        </ion-button>
+    </ion-item>
+  </ion-card>
+</ion-content>

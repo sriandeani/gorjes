@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Cart</ion-title>
+    <ion-button fill="clear" color="danger" slot="start" (click)="goHome()">
+      <ion-icon name="arrow-round-back"></ion-icon>
+    </ion-button>
+    <ion-button fill="clear" color="danger" slot="end" (click)="hapusSemuaDataPinjaman()">
+      <ion-icon name="trash"></ion-icon>
+    </ion-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card *ngFor="let dt of data">
+    <ion-card-header>
+      <ion-card-subtitle>gorjes</ion-card-subtitle>
+      <ion-card-title>{{ dt.productName }}</ion-card-title>
+      <img src="assets/icon/{{ dt.image }}">
+    </ion-card-header>
+    <ion-card-content>
+      <ion-text color="primary">
+        <h2>IDR {{ dt.harga }}</h2>
+      </ion-text>
+      <ion-button color="primary" (click)="beli(dt.id)">Beli</ion-button>
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>

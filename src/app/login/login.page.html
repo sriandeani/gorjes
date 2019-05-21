@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+  <br>
+  <div style="display: flex; justify-content: center">
+    <img src="assets/icon/logo-fix.png">
+  </div>
+
+  <ion-item>
+    <ion-label position="stacked">Email</ion-label>
+    <ion-input clearInput type="text" [(ngModel)]="username"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="stacked">Password</ion-label>
+    <ion-input clearInput type="password" [(ngModel)]="password"></ion-input>
+  </ion-item>
+  <br>
+  <br>
+  <br>
+  <div style="display: flex; justify-content: center">
+    <ion-button (click)="login()" stlyle="width: 150px;" color="primary">Sign In</ion-button>
+  </div>
+  <ion-row center>
+    <div style="width: 100%; text-align: center;">
+      If you don't have an account, please <a routerLink='/create-account'>
+        register</a> first!
+    </div>
+  </ion-row>
+</ion-content>
